@@ -38,7 +38,7 @@
 
     <TextView
         android:layout_marginTop="10dp"
-        android:id="@+id/lblResposta"
+        android:id="@+id/lblCep"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:padding="7dp"
@@ -46,21 +46,38 @@
         android:textSize="20sp"
         />
     <TextView
-        android:layout_marginTop="5dp"
-        android:id="@+id/lblResposta2"
+        android:layout_marginTop="10dp"
+        android:id="@+id/lblLogradouro"
         android:layout_width="300dp"
-        android:layout_height="70dp"
-        android:padding="5dp"
+        android:layout_height="50dp"
+        android:padding="7dp"
         android:textColor="#000000"
         android:textSize="20sp"
         />
-
     <TextView
-        android:layout_marginTop="5dp"
-        android:id="@+id/lblResposta3"
+        android:layout_marginTop="10dp"
+        android:id="@+id/lblBairro"
         android:layout_width="300dp"
-        android:layout_height="70dp"
-        android:padding="5dp"
+        android:layout_height="50dp"
+        android:padding="7dp"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/lblLocalidade"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:padding="7dp"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/lblUF"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:padding="7dp"
         android:textColor="#000000"
         android:textSize="20sp"
         />

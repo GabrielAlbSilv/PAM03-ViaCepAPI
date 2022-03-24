@@ -70,16 +70,11 @@ public class CEP {
 
     @Override
     public String toString() {
-        return "CEP: " + getCep();
-
-    }
-    public String toString2() {
-        return "Logradouro: " + getLogradouro();
-
-    }
-
-    public String toString3() {
-        return "Complemento:" + getComplemento();
-
+        return "CEP: " + getCep()
+                + "\nLogradouro: " + getLogradouro()
+                + "\nComplemento: " + getComplemento()
+                + "\nBairro: " + getBairro()
+                + "\nCidade:" + getLocalidade()
+                + "\nEstado: " + getUf();
     }
 }
