@@ -54,6 +54,7 @@
         android:textColor="#000000"
         android:textSize="20sp"
         />
+
     <TextView
         android:layout_marginTop="10dp"
         android:id="@+id/lblBairro"
@@ -63,6 +64,7 @@
         android:textColor="#000000"
         android:textSize="20sp"
         />
+
     <TextView
         android:layout_marginTop="10dp"
         android:id="@+id/lblLocalidade"
@@ -72,9 +74,10 @@
         android:textColor="#000000"
         android:textSize="20sp"
         />
+
     <TextView
         android:layout_marginTop="10dp"
-        android:id="@+id/lblUF"
+        android:id="@+id/lblUf"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:padding="7dp"

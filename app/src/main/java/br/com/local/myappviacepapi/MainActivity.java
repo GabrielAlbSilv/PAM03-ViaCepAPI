@@ -15,9 +15,10 @@ public class MainActivity extends AppCompatActivity {
     Button btnBuscarCep;
     EditText txtCep;
     TextView lblCep;
+    TextView lblBairro;
     TextView lblLogradouro;
-
-
+    TextView  lblLocalidade;
+    TextView lblUf;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +27,9 @@ public class MainActivity extends AppCompatActivity {
         txtCep = findViewById(R.id.txtCep);
         lblCep = findViewById(R.id.lblCep);
         lblLogradouro = findViewById(R.id.lblLogradouro);
+        lblBairro= findViewById(R.id.lblBairro);
+        lblLocalidade=findViewById(R.id.lblLocalidade);
+        lblUf=findViewById(R.id. lblUf);
         btnBuscarCep = findViewById(R.id.btnBuscaCep);
         btnBuscarCep.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -38,9 +42,9 @@ public class MainActivity extends AppCompatActivity {
                     CEP retorno = new HttpService(txtCep.getText().toString().trim()).execute().get();
                     lblCep.setText("CEP: " + retorno.getCep());
                     lblLogradouro.setText("Logradouro"+retorno.getLogradouro());
-                    retorno.getBairro();
-                    retorno.getLocalidade();
-                    retorno.getUf();
+                    lblBairro.setText("Bairro"+retorno.getBairro());
+                    lblLocalidade.setText("Cidade"+retorno.getLocalidade());
+                    lblUf.setText("Estado"+retorno.getUf());
 
                 } catch (ExecutionException e) {
                     e.printStackTrace();
