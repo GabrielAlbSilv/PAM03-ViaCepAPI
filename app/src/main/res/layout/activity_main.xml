@@ -25,59 +25,135 @@
 
         <Button
             android:id="@+id/btnBuscaCep"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:background="@color/design_default_color_on_primary"
             android:padding="10dp"
             android:text="Buscar CEP"
-            android:textSize="22sp" />
+            android:textSize="15sp" />
 
     </LinearLayout>
 
-    <TextView
-        android:layout_marginTop="8dp"
-        android:id="@+id/lblCep"
-        android:layout_width="300dp"
-        android:layout_height="40dp"
-        android:textColor="#000000"
-        android:textSize="20sp"
-        />
-    <TextView
-        android:layout_marginTop="2dp"
-        android:id="@+id/lblLogradouro"
-        android:layout_width="300dp"
-        android:layout_height="70dp"
-        android:textColor="#000000"
-        android:textSize="20sp"
-        />
-
-    <TextView
-        android:layout_marginTop="2dp"
-        android:id="@+id/lblBairro"
-        android:layout_width="300dp"
-        android:layout_height="40dp"
-        android:textColor="#000000"
-        android:textSize="20sp"
-        />
-
-    <TextView
-        android:layout_marginTop="2dp"
-        android:id="@+id/lblLocalidade"
-        android:layout_width="300dp"
-        android:layout_height="40dp"
-
-        android:textColor="#000000"
-        android:textSize="20sp"
-        />
-
-    <TextView
+    <LinearLayout
         android:layout_marginTop="10dp"
-        android:id="@+id/lblUf"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+    <TextView
+        android:text="CEP:              "
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
         android:textColor="#000000"
-        android:textSize="20sp"
+        android:textSize="18sp"
         />
+
+        <EditText
+            android:id="@+id/lblCep"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="Logradouro: "
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            />
+
+        <EditText
+            android:id="@+id/lblLogradouro"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="Bairro:           "
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            />
+
+        <EditText
+            android:id="@+id/lblBairro"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="Cidade:         "
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            />
+
+        <EditText
+            android:id="@+id/lblLocalidade"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="UF:                 "
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            />
+
+        <EditText
+            android:id="@+id/lblUf"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            />
+    </LinearLayout>
+
 </LinearLayout>
