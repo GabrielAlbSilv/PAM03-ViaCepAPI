@@ -74,7 +74,7 @@ public class CEP {
                 + "\nLogradouro: " + getLogradouro()
                 + "\nComplemento: " + getComplemento()
                 + "\nBairro: " + getBairro()
-                + "\nCidade:" + getLocalidade()
+                + "\nCidade: " + getLocalidade()
                 + "\nEstado: " + getUf();
     }
 }

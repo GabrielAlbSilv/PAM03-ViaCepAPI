@@ -40,11 +40,11 @@ public class MainActivity extends AppCompatActivity {
                 try {
                     //preencher o cep no lblResposta do layout
                     CEP retorno = new HttpService(txtCep.getText().toString().trim()).execute().get();
-                    lblCep.setText("CEP: " + retorno.getCep());
-                    lblLogradouro.setText("Logradouro"+retorno.getLogradouro());
-                    lblBairro.setText("Bairro"+retorno.getBairro());
-                    lblLocalidade.setText("Cidade"+retorno.getLocalidade());
-                    lblUf.setText("Estado"+retorno.getUf());
+                    lblCep.setText("CEP: " + retorno.getCep().trim());
+                    lblLogradouro.setText("Logradouro: "+retorno.getLogradouro().trim());
+                    lblBairro.setText("Bairro: "+retorno.getBairro().trim());
+                    lblLocalidade.setText("Cidade: "+retorno.getLocalidade().trim());
+                    lblUf.setText("Estado: "+retorno.getUf().trim());
 
                 } catch (ExecutionException e) {
                     e.printStackTrace();
